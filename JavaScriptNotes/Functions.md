@@ -105,6 +105,29 @@ textBox.addEventListener("keydown", function (event) {
 ```
 
 ## Arrow functions
+The syntax of *Arrow Functions* looks like this:
+
+```js
+let func = (arg1, arg2, ..., argN) => expression;
+```
+
+This creates a function func that accepts arguments `arg1..argN`, 
+then evaluates the `expression` on the right side with their use and returns its result.
+
+Let's see an example:
+```js
+let sum = (a, b) => a + b;
+
+/* This arrow function is a shorter form of:
+
+let sum = function(a, b) {
+  return a + b;
+};
+*/
+
+alert( sum(1, 2) ); // 3
+```
+
 If you pass an anonymous function like this, there's an alternative form you can use, called an arrow function. Instead of `function(event)`, you write `(event) =>`:
 
 ```js
@@ -112,6 +135,8 @@ textBox.addEventListener("keydown", (event) => {
   console.log(`You pressed "${event.key}".`);
 });
 ```
+
+
 ## Important concepts
 
 **Local Variables**
